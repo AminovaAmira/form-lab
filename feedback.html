@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/feedback.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Обратная связь</h2>
+        <form id="feedback-form">
+            <div class="form-group">
+                <label for="fullName">ФИО:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Откуда узнали о нас:</label>
+                <label for="radioWeb">Из интернета</label>
+                <input type="radio" id="radioWeb" name="source" value="web">
+                <label for="radioFriends">От друзей</label>
+                <input type="radio" id="radioFriends" name="source" value="friends">
+                <label for="radioOther">Другое</label>
+                <input type="radio" id="radioOther" name="source" value="other">
+            </div>
+            <div class="form-group">
+                <label for="feedbackType">Тип обращения:</label>
+                <select id="feedbackType" name="feedbackType">
+                    <option value="жалоба">Жалоба</option>
+                    <option value="предложение">Предложение</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Текст сообщения:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="attachments">Вложения:</label>
+                <input type="file" id="attachments" name="attachments">
+            </div>
+            <div class="form-row">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Даю согласие на обработку персональных данных</label>
+            </div>
+            <button type="submit">Отправить</button>
+            <a class="link" href="index.html">Форма авторизации</a>
+        </form>
+    </div>
+
+    <script src="./scripts/feedback.js"></script>
+</body>
+
+</html>
