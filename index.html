@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h2>Авторизация</h2>
-        <form id="login-form">
+        <form id="login-form" action="https://httpbin.org/post" method="post">
             <div class="form-group">
                 <label for="username">Имя пользователя</label>
                 <input type="text" id="username" name="username" required>
@@ -32,7 +32,6 @@
         </form>
         <div id="error-message" class="hidden">Неправильное имя пользователя или пароль.</div>
     </div>
-    <script src="./scripts/login.js"></script>
 </body>
 
 </html>

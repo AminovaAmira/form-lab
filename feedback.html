@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h2>Обратная связь</h2>
-        <form id="feedback-form">
+        <form id="feedback-form" action="https://httpbin.org/post" method="post">
             <div class="form-group">
                 <label for="fullName">ФИО:</label>
                 <input type="text" id="fullName" name="fullName" required>
@@ -54,7 +54,6 @@
         </form>
     </div>
 
-    <script src="./scripts/feedback.js"></script>
 </body>
 
 </html>
