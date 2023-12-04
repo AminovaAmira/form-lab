@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h2>Обратная связь</h2>
-        <form id="feedback-form" action="https://httpbin.org/post" method="post">
+        <form id="feedback-form" action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="fullName">ФИО:</label>
                 <input type="text" id="fullName" name="fullName" required>
@@ -43,7 +43,7 @@
             </div>
             <div class="form-group">
                 <label for="attachments">Вложения:</label>
-                <input type="file" id="attachments" name="attachments">
+                <input type="file" id="attachments" name="attachments" multiple>
             </div>
             <div class="form-row">
                 <input type="checkbox" id="consent" name="consent" required>
